@@ -1,0 +1,108 @@
+html,body{
+
+    margin:0;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    overflow-x:hidden;
+    width:100%;
+
+}
+
+/*header*/
+nav{
+   
+    display:flex;
+    padding:10px;
+    justify-content:space-around;
+    align-items:center;
+    z-index:1;
+    
+     
+
+}
+nav ul{
+   
+    display:flex;
+    list-style:none;
+    width: 30%;
+    margin:0;
+    justify-content:space-between;
+    z-index:1;
+    
+}
+nav div h1{
+
+    font-family: 'Allison', cursive;
+
+}
+
+nav ul li{
+
+    font-size:0.8em;
+
+}
+
+/* hamburger menu */
+.menu-toggle{
+
+    display:none;
+    flex-direction:column;
+    height:20px;
+    justify-content:space-between;
+    position:relative;
+    z-index: 1;
+       
+}
+.menu-toggle span{
+
+    display:block;
+    width:30px;
+    height:3px;
+    background-color: white;
+    border-radius:2px;
+    transition:1s;
+
+}
+.menu-toggle input{
+
+    position:absolute;
+    width:30px;
+    height:28px;
+    top: -4px;
+    left:-4px;
+    opacity:0;
+    cursor:pointer;
+    z-index: 1;
+    
+
+}
+
+/* hamburger menu animation */
+
+.menu-toggle span:nth-child(2){
+
+    transform-origin:0 0;
+
+}
+.menu-toggle span:nth-child(4){
+    transform-origin:0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+
+    transform:rotate(45deg) translate(-3px,-1px);
+
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+
+    transform:rotate(-45deg);
+
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform:translatex(-30px) scale(0);
+    opacity:0;
+    transition:1s;
+}
+

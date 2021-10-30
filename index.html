@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+           <nav class="header fixed-top bg-success">
+                <div><h1 id="title">SISTEM INFORMASI PAGI</h1></div>
+                    <ul class="text-success">
+                        <li><?php echo "upload"?></li>
+                        <li><div id="tanggalWaktu"></div></li>
+                        <li><?php echo "User" ?></li>
+                    </ul>
+                    <div class="menu-toggle">
+                        <input type="checkbox"/>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+            </nav>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> ase
+        <script>
+            const nav1 = document.querySelector('nav');
+            const nav2 = document.getElementById('title');
+
+            window.addEventListener("scroll",function(){
+            if(window.pageYOffset > 2 ){
+                nav2.classList.remove('invisible','shadow');
+                nav2.classList.add('visible','shadow');
+                nav.classList.add("text-white");
+                nav1.classList.add("bg-success","shadow");
+            }else{
+                nav2.classList.remove('visible','shadow');
+                nav2.classList.add('invisible','shadow');
+                nav.classList.remove('text-white');
+                nav1.classList.remove("bg-success","shadow");
+            }
+        });
+        </script>
+    </body>
+</html>

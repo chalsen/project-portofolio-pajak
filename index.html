@@ -8,6 +8,7 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
+        <!--untuk header basis bootstrap framework-->
            <nav class="header fixed-top bg-success">
                 <div><h1 id="title">SISTEM INFORMASI PAGI</h1></div>
                     <ul class="text-success">
@@ -23,24 +24,31 @@
                     </div>
             </nav>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> ase
+        <br><br><br><br><br> <br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> ase
         <script>
+
+            //header respon
             const nav1 = document.querySelector('nav');
             const nav2 = document.getElementById('title');
 
             window.addEventListener("scroll",function(){
             if(window.pageYOffset > 2 ){
-                nav2.classList.remove('invisible','shadow');
-                nav2.classList.add('visible','shadow');
-                nav.classList.add("text-white");
+                
+                nav2.classList.add("text-white");
                 nav1.classList.add("bg-success","shadow");
+                nav2.classList.remove("text-dark");
+                
+                
             }else{
-                nav2.classList.remove('visible','shadow');
-                nav2.classList.add('invisible','shadow');
-                nav.classList.remove('text-white');
-                nav1.classList.remove("bg-success","shadow");
+                nav2.classList.add("text-dark");
+    
+                nav2.classList.remove("text-white");
+                nav1.classList.add("bg-success","shadow");
+               
             }
         });
+
+        //=========================================
         </script>
     </body>
 </html>

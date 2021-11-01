@@ -24,6 +24,7 @@ nav{
     justify-content:space-around;
     align-items:center;
     z-index:1;
+    opacity: 80%;
     
      
 
@@ -158,6 +159,7 @@ nav ul li{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     background-color: blue;
+    z-index: 1;
 
 }
 
@@ -167,6 +169,7 @@ nav ul li{
     padding: 15px;
     height: 200px;
     background: green;
+    opacity: 50%;
 
 }
 /*
@@ -181,3 +184,25 @@ nav ul li{
     margin-top: 300px;
 
 }
+
+.backheader{
+
+    height: 500px;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-image: url(picture/backheader.jpg);
+    z-index: -1;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .kotak1{
+
+    padding: 15px;
+    height: 200px;
+    background: green;
+    
+
+} */
